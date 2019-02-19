@@ -2,11 +2,16 @@
 
 use strict;
 
-my $file = shift;
-my $name = shift;
-my $kosu = shift;
-my $ido = shift;
-my $kdo = shift;
+# 35.925606, 136.188622
+
+my $file = "recordfile.csv";
+
+my $name = "ƒgƒ}ƒg"
+my $kosu = "";
+#my $ido = shift;
+#my $kdo = shift;
+my $ido = 35.925606;
+my $kdo = 136.188622;
 
 open(O, ">$file") || die "open error(w): $file\n";
 print(O "$name,$kosu,$ido,$kdo\r\n");
